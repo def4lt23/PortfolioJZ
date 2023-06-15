@@ -1,0 +1,96 @@
+<div class="row">
+    <h1>Hard & Soft Skills</h1>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="25"
+        [title]="'HTML'" 
+        [titleFontSize]="'2em'"
+        [showSubtitle]="false"
+        [showUnits]="false"
+        [imageSrc]="'../assets/htmllogo.png'"
+        [showImage]="true"
+        [imageHeight]="80"
+        [imageWidth]="80"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+      ></circle-progress>
+    </div>
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="50"
+        [title]="'JS'" 
+        [titleFontSize]="'2em'"
+        [showSubtitle]="false"
+        [showUnits]="false"
+        [imageSrc]="'../assets/jslogo.png'"
+        [showImage]="true"
+        [imageHeight]="80"
+        [imageWidth]="80"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+      ></circle-progress>
+    </div>
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="80"
+        [title]="'PYTHON'" 
+        [titleFontSize]="'2em'"
+        [showSubtitle]="false"
+        [showUnits]="false"
+        [imageSrc]="'../assets/pythonlogo.png'"
+        [showImage]="true"
+        [imageHeight]="80"
+        [imageWidth]="80"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+      ></circle-progress>
+    </div>
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [percent]="35"
+        [title]="'ANGULAR'" 
+        [titleFontSize]="'2em'"
+        [showSubtitle]="false"
+        [showUnits]="false"
+        [imageSrc]="'../assets/angularlogo.png'"
+        [showImage]="true"
+        [imageHeight]="80"
+        [imageWidth]="80"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+      ></circle-progress>
+    </div>
+
+</div> 
+
+<!--el tittle reemplaza el valor del porcentaje de arriba (25) 
+  el showUnits muestra el signo de %, se lo sacasamos para que solo se vea ese titulo
+  para sacar el subtitle de progress es showSubtitle ponerle en false
+  la funcion lazy sirve para que manualmente con click se llenen los circulos
+  esta todo en la pagina de los circulos, abajo donde se instala
+
+  para agregar imagen usamos el: imagesrc, showimage, imageheight, imagewidth
+-->
