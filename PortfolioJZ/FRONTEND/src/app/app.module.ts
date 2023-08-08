@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';//**//
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 
@@ -14,6 +14,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component'; /*circulos de progreso*/ 
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { FooterComponent } from './components/footer/footer.component'; /*circul
     HeaderComponent,
     LogoAPComponent,
     BannerComponent,
-    AcercaDeComponent,
+    AcercaDeComponent,//*no se porque sacando la t al final de component si lo toma correcto, me equivoque en nombrar en otro lado??*// 
     ExperienciaComponent,
     EducacionComponent,
     HysComponent,
@@ -31,7 +32,8 @@ import { FooterComponent } from './components/footer/footer.component'; /*circul
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({}) /*circulos de progreso*/
+    NgCircleProgressModule.forRoot({}), /*circulos de progreso*/
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
